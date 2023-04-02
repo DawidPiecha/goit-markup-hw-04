@@ -17,6 +17,11 @@
   --quarternary-box-shadow-color: #00000033;
   --header-border-bottom-color: #ececec;
   --background-color-for-gradient: rgba(47, 48, 58, 0.4);
+  --parrent-color: currentColor;
+  --social-links-primary-icon-color: #afb1b8;
+  --social-links-secondary-icon-color: #ffffff;
+  --social-links-icon-hover-color: #ffffff;
+  --social-links-primary-background-color: #2196f3;
 }
 * {
   margin: 0;
@@ -108,7 +113,7 @@ body {
   color: var(--object-primary-background-color);
 }
 .contact-icon {
-  fill: currentColor;
+  fill: var(--parrent-color);
 }
 
 .top-container {
@@ -165,13 +170,30 @@ body {
   padding-right: 15px;
   background-color: var(--page-quarternary-background-color);
 }
+.advantages-list-icons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-between;
+}
+.advantages-list-icons-item {
+  background-color: var(--page-tertiary-background-color);
+  border-radius: 4px;
+}
+.advantages-list-icons-item {
+  padding: 25px 100px;
+}
 .advantages-list {
   display: flex;
   padding-left: 15px;
   padding-right: 15px;
   justify-content: space-between;
   column-gap: 30px;
+  margin-top: 30px;
 }
+
 /*heading of lorem ipsum section in index.html*/
 .topic {
   line-height: 1.14;
@@ -251,8 +273,28 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin: 10px auto 30px;
+  margin: 10px auto 16px;
 }
+.teammates-social-links {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.teammates-social-link {
+  fill: var(--social-links-primary-icon-color);
+  background-color: var(--object-secondary-background-color);
+  padding: 12px;
+}
+
+.teammates-social-link:hover,
+.teammates-social-link:focus {
+  fill: var(--social-links-icon-hover-color);
+  background-color: #2196f3;
+  border-radius: 50%;
+}
+
 /* footer of index.hmtl and portfolio.html*/
 .footer {
   background-color: var(--page-secondary-background-color);
@@ -284,6 +326,9 @@ body {
 .lower-contact-list {
   margin-top: 20px;
   padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
 }
 .lower-contacts .lower-link {
   color: var(--alpha-color);

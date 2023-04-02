@@ -294,7 +294,39 @@ body {
   background-color: #2196f3;
   border-radius: 50%;
 }
-
+/*Customers section*/
+.our-customers {
+  background-color: var(--page-quarternary-background-color);
+}
+.our-customers-heading {
+  color: var(--text-primary-color);
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  background-color: var(--page-quarternary-background-color);
+}
+.our-customers-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  align-items: center;
+  padding: 0 15px;
+}
+.our-customers-list-item {
+  fill: var(--social-links-primary-icon-color);
+  background-color: var(--page-quarternary-background-color);
+  border: 1px solid var(--social-links-primary-icon-color);
+  border-radius: 4px;
+  padding: 17.71px 32px 14.25px 32px;
+}
+.our-customers-list-item:hover,
+.our-customers-list-item:focus {
+  fill: var(--object-primary-background-color);
+  border: 1px solid var(--object-primary-background-color);
+  cursor: pointer;
+}
 /* footer of index.hmtl and portfolio.html*/
 .footer {
   background-color: var(--page-secondary-background-color);

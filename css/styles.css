@@ -344,6 +344,7 @@ svg {
 .footer-container {
   display: flex;
 }
+
 .footer-box {
   display: flex;
   flex-direction: column;
@@ -388,17 +389,33 @@ svg {
 .footer-social-links {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .footer-social-links-heading {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  font-color: var(--text-tertiary-color);
+  color: var(--text-tertiary-color);
+  padding-bottom: 20px;
+  padding-top: 12px;
 }
-.footer-social-links-list {
+.footer-social-links-box {
   display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+.footer-social-links-link {
+  fill: var(--social-links-secondary-icon-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.footer-social-links-link:hover,
+.footer-social-link:focus {
+  fill: var(--social-links-icon-hover-color);
+  background-color: #2196f3;
+  border-radius: 50%;
 }
 /* buttons of a list in portfolio.html*/
 .portfolio-upper-section {

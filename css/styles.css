@@ -341,10 +341,13 @@ svg {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-container {
+  display: flex;
+}
 .footer-box {
   display: flex;
   flex-direction: column;
-  margin-right: auto;
+  margin-right: 70px;
 }
 /*logo part of footer*/
 .footer-logo {
@@ -386,6 +389,13 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.footer-social-links-heading {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-color: var(--text-tertiary-color);
 }
 .footer-social-links-list {
   display: flex;
